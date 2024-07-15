@@ -6,6 +6,6 @@ on: push
       steps:
         - run: node --version
         - run: npm --version
-        - uses: actions/checkout@v3
+        - uses: actions/setup-node@v4
         - run: npm install
         - run: node server.js
