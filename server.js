@@ -9,17 +9,17 @@ app.use(express.urlencoded({ extended: true })); // for parsing application/x-ww
 
 app.use(express.static(path.join(__dirname, 'public')));
 // Route to serve index.html on the root URL
-app.get('/', (req, res) => {
+app.get('https://asysangel.github.io/bookandgame/index', (req, res) => {
     res.sendFile(__dirname + '/index.html');
 });
 
 // Route to serve about.html
-app.get('/about', (req, res) => {
+app.get('https://asysangel.github.io/bookandgame/about', (req, res) => {
     res.sendFile(__dirname + '/about.html');
 });
 
 // Route to serve contact.html
-app.get('/contact', (req, res) => {
+app.get('https://asysangel.github.io/bookandgame/contact', (req, res) => {
     res.sendFile(__dirname + '/contact.html');
 });
 
