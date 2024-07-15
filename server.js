@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
-const port = 80;
-const ipAddress = '127.0.0.1';
+//const port = 80;
+//const ipAddress = '127.0.0.1';
 const path = require('path');
 
 app.use(express.json());
@@ -34,7 +34,7 @@ app.post('/submit-form', (req, res) => {
   });
 
 app.listen(port, ipAddress, () => {
-    console.log(`Server running on http://${ipAddress}:${port}`);
+    console.log(`Server running on https://asysangel.github.io/bookandgame`);
 });
 
 app.use((req, res, next) => {
