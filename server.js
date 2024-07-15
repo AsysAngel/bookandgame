@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
-const port = 5500;
-const ipAddress = '127.0.0.1';
+//const port = 5500;
+//const ipAddress = '127.0.0.1';
 const path = require('path');
 
 app.use(express.json());
@@ -33,10 +33,10 @@ app.post('/submit-form', (req, res) => {
     res.send('Form received');
   });
 
-app.listen(port, ipAddress, () => {
+/*app.listen(port, ipAddress, () => {
     console.log(`Server running on http://${ipAddress}:${port}`);
 });
-
+*/
 app.use((req, res, next) => {
     res.status(404).send('File not found');
   });
